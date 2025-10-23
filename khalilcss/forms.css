@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+  
+  
+}
+
+.log-form{
+    display: flex;
+     
+ justify-content: center;  
+ min-height: 100vh;
+ 
+ align-items: center;
+ background: url("../photos/Background.jpg");
+ background-position: center;
+ background-size: cover;
+ color: #fff;
+
+}
+form{
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    border: 0.2px solid gray;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 70%;
+    height: auto;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 5%;
+    gap: 20px;
+    font-size: 10px;
+     /* background-color: aqua; */
+
+}
+.title-form{
+   font-size: 15px;
+}
+
+form a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title-form {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    text-align: center;
+    margin: 40px;
+    /* background-color: antiquewhite; */
+    
+}
+.input{
+    width: 90%;
+    /* background-color: antiquewhite; */
+   
+    
+}
+
+
+.input input{
+    /* padding: 10px 100px; */
+    
+    height: 35px;
+    width: 100%;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    color: #fff;
+    padding: 3%;
+   
+    
+}
+.input input::placeholder{
+    color: #fff;
+     
+
+    
+}
+.regester{
+    display: flex;
+    font-size: 13px;
+    font-size: 10px;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    
+}
+.check{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.q{
+    display: flex;
+}
+.butt-log {
+    padding: 9px 100px;
+    border-radius: 10px;
+
+
+}
+.or {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 10px;
+}
+.icons{
+    display: flex;
+    gap: 4px;
+    font-size: 19px ;
+}
+@media (max-width:600px ) {
+    body{
+        min-width:393px 
+    }
+
+    .title-form{
+        font-size: 10px;
+    }
+    
+}
+
