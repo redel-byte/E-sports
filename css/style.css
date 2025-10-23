@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    padding: 2rem;
+}
+
+.header__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+.header__div a{
+    padding: 3rem;
+}
+
+.logo {
+    width: 10rem;
+    height: 5rem;
+
+}
+
+.nav__title {
+    font-size: 1.8rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.footer_section {
+  background: radial-gradient(circle at top, #111 0%, #000 100%);
+  color: #fff;
+  padding: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer_left h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer_link {
+  display: flex;
+  gap: 70px;
+}
+
+.footer_link h4 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.footer_link ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer_link a {
+  color: #a1a1a1;
+  text-decoration: none;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer_link a:hover {
+  color: #fff;
+}
+
+.footer_right {
+  flex: 1;
+  max-width: 450px;
+}
+
+.footer_right p {
+  font-size: 12px;
+  color: #d1d1d1;
+  margin-bottom: 15px;
+}
+
+.subscribe_form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #666;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 45px;
+}
+
+.subscribe_form input {
+  flex: 1;
+  padding: 10px 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.subscribe_form button {
+  background: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  padding: 10px 25px;
+  border-left: 1px solid #666;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 0.5px solid white;
+  border-radius: 18px;
+}
+
+.subscribe_form button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.footer_bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #a1a1a1;
+  font-size: 13px;
+  border-top: 1px solid #333;
+  padding-top: 25px;
+}
+
+.footer_bottom .icons {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.footer_bottom i {
+  color: #a1a1a1;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.footer_bottom i:hover {
+  color: #fff;
+}
+
+
