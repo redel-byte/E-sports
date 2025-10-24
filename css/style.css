@@ -1,45 +1,299 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* header style start */
+
 header {
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-    height: 100%;
-    padding: 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  padding: 2rem;
 }
 
 .header__div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 1rem;
 }
-.header__div a{
-    padding: 3rem;
+
+.header__div a {
+  padding: 2rem;
 }
 
 .logo {
-    width: 10rem;
-    height: 5rem;
+  width: 10rem;
+  height: 5rem;
 
 }
 
 .nav__title {
-    font-size: 1.8rem;
-    padding: 2rem;
-    text-decoration: none;
-    color: white;
+  font-size: 1.8rem;
+  padding: 2rem;
+  text-decoration: none;
+  color: white;
 }
+
+/* header style end */
+
+/* tournaments page */
+/* hero section style start */
+.tournaments_hero_section {
+  background: url("../assets/images/fg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero_section {
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero_section .container .content {
+  color: white;
+}
+
+.hero_section .container .content h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.hero_section .container .content p {
+  font-size: small;
+  font-weight: 300;
+}
+
+.hero_section .container .sponsors img {
+  width: 100px;
+  height: 80px;
+  margin: 10px;
+}
+
+.hero_section .sub-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  position: absolute;
+}
+
+/* hero section style end */
+
+/* tournaments page */
+
+
+/* blog page */
+.blog_section {
+  background: url(../assets/images/wer.jpg);
+}
+
+.about_blog_section {
+  background-color: #000;
+}
+
+.about_blog_section .container .content_container {
+  padding: 20px;
+  color: white;
+  font-size: 2rem;
+}
+
+.about_blog_section .container img {
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.about_blog_section {
+  padding: 5rem;
+}
+
+.about_blog_section .content_container .content {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.about_blog_section .content_container .content p {
+  padding: 8px;
+  font-size: small;
+}
+
+.about_blog_section .content_container .content h4 {
+  font-weight: 200;
+}
+
+.about_blog_section .text {
+  padding: 20px;
+}
+
+.about_blog_section .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_blog_section h3 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 200;
+}
+
+.blogs {
+  background-color: #000;
+  padding: 20px;
+  color: white;
+}
+
+.blogs .content_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogs .content {
+  flex: 1;
+  padding: 20px;
+}
+
+.blogs .content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.blogs .content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #dcdcdc;
+  margin-bottom: 15px;
+}
+
+.blogs button {
+  background-color: #ff8c1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.blogs button:hover {
+  background-color: #ff9f3b;
+}
+
+.blogs .image {
+  flex: 1;
+}
+
+.blogs .image img {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+
+.cards_section {
+  display: flex;
+  background-color: black;
+  padding: 50px;
+}
+
+.cards_section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin: auto;
+}
+
+.cards_section .cards .card1 {
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  background: url(../assets/images/does-esports-need-a-players_-union_2a3dc373a0ce4d8aab76f93322e23022_grande.jpg);
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3 ease;
+}
+
+.cards_section .cards .card2 {
+  width: 850px;
+  height: 400px;
+  overflow: hidden;
+  background: url(../assets/images/sport-ou-esport_optimized.webp);
+  background-size: cover;
+
+  border-radius: 20px;
+  transition: all 0.3 ease;
+}
+
+.cards_section .cards .card3 {
+  width: 450px;
+  height: 400px;
+  overflow: hidden;
+  background: url(../assets/images/esports-awards.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 0.3 ease;
+}
+
+.cards_section .cards .card4 {
+  width: 450px;
+  height: 400px;
+  overflow: hidden;
+  background: url(../assets/images/Banner-Morocco-Gaming-Festival-2025.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 0.3 ease;
+}
+
+.cards_section .cards .card5 {
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  background: url(../assets/images/images.jpg);
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3 ease;
+}
+.cards_section .cards .card5:hover{
+  transform: scale(1.05);
+}
+
+/* blog page */
+
+
+/* footer style start */
 
 .footer_section {
   background: radial-gradient(circle at top, #111 0%, #000 100%);
@@ -168,4 +422,4 @@ header {
   color: #fff;
 }
 
-
+/* footer style end */
