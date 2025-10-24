@@ -24,7 +24,7 @@
 form{
     background-color: transparent;
     backdrop-filter: blur(7px);
-    border: 0.2px solid gray;
+    border: 0.2px solid black solid gray;
     border-radius: 19px;
     display: flex;
     flex-direction: column;
@@ -156,7 +156,7 @@ form textarea{
     width: 70%;
 }
 .contacts__info{
-    border: 0.2px solid gray;
+    border: 0.2px solid black solid gray;
     
     display: flex;
      max-width: 300px;
@@ -235,7 +235,7 @@ margin: 0 5px;
   
 }
 .admin__nav-bar:hover{
-border: 2px solid rgba(0, 123, 255, 0.756);}
+border: 2px  solid rgba(0, 123, 255, 0.756);}
 
 
 .admin__pages {
@@ -251,7 +251,7 @@ border: 2px solid rgba(0, 123, 255, 0.756);}
     
 }
 .admin__pages button{
-    color: white;
+    color: rgb(21, 16, 16);
     background: red;
     padding: 7px;
     border-radius: 9px;
@@ -269,7 +269,7 @@ border: 2px solid rgba(0, 123, 255, 0.756);}
 }
 .cards__items:hover{
     /* background-color: aqua; */
-    border: 2px solid rgba(0, 123, 255, 0.756);
+    border: 2px  solid rgba(0, 123, 255, 0.756);
     color: #fff;
 }
 .cards__items{
@@ -277,7 +277,7 @@ border: 2px solid rgba(0, 123, 255, 0.756);}
     align-items: center;
     gap: 10px;
     border: 1px solid gray;
-    background: rgba(255, 255, 255, 0.584);
+    background: rgba(65, 45, 45, 0.584);
     color: #fff;
     width: 90%;
     border-radius: 10px;
@@ -292,7 +292,7 @@ border: 2px solid rgba(0, 123, 255, 0.756);}
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.441);
     height: 70%;
     border: 1px solid gray;
     padding: 10px;
@@ -312,6 +312,9 @@ border: 2px solid rgba(0, 123, 255, 0.756);}
 }
 .cr{
     color: #fff;
+}
+.hr{
+    border-bottom: 2px solid black !important;
 }
 
 
@@ -412,6 +415,9 @@ border: 2px solid rgba(0, 123, 255, 0.756);}
         
         /* background-color: #fff; */
         
+    }
+    main{
+        margin: 10px;
     }
    
 
