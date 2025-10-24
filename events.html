@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./css/events.css">
-    <link rel="stylesheet" href="./css/components/cards.css"> -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/70250cbaf5.js" crossorigin="anonymous"></script>
-    <title>Events</title>
+    <script src="https://kit.fontawesome.com/07c3597bd6.js" crossorigin="anonymous"></script>
+    <title>Nuxus E-sport</title>
 </head>
+
 <body>
-    <header></header>
+    <!--mobile nav-->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="header_menu">
+                    <h1>E-Sports Nexus</h1>
+                </div>
+                <div class="navbar">
+                    <a href="index.html">Home</a>
+                    <div class="subnav">
+                        <button class="subnavbtn">Games <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a href="events.html">Events</a>
+                            <a href="competition.html">competition</a>
+                        </div>
+                    </div>
+                    <a href="index.html">Blog</a>
+                    <a href="index.html">Plans</a>
+                    <a href="index.html">Contact Us</a>
+                </div>
+                <div class="header_contact">
+                    <a href="signup.html">signup</a>
+                    <a href="login.html">login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- main -->
     <main>
+        <section class="tournaments_hero_section">
+            <div class="gradient"></div>
+            <div class="hero_section">
+                <div class="container">
+                    <div class="sub-container">
+                        <div class="content">
+                            <div class="title">
+                                <h1>Events</h1>
+                                <p>Don't miss out on the biggest esports events with massive prize pools.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="sponsors">
+                        <img src="assets/icons/white/legion.webp" alt="">
+                        <img src="assets/icons/white/lenovo.webp" alt="">
+                        <img src="assets/icons/white/mastercard.webp" alt="">
+                        <img src="assets/icons/white/nvidia.webp" alt="">
+                        <img src="assets/icons/white/samsung.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
         <div id="events">
             <section id="events__hero-section">
 
@@ -42,7 +90,7 @@
                     </div>
                 </div>
             </section>
-            <secion id="events__time">
+            <section id="events__time">
                 <div class="wide__card">
                     <div class="top"><h2>Arena</h2><span>Completed</span></div>
                     <div class="bottom"><p><i class="fa-solid fa-calendar"></i> &nbsp; 2025/02/05 - 9:00</p><p><i class="fa-solid fa-calendar"></i> &nbsp; 2025/02/10 - 17:00</p></div>
@@ -63,9 +111,72 @@
                     <div class="top"><h2>Duel</h2><span>LIVE</span></div>
                     <div class="bottom"><p><i class="fa-solid fa-calendar"></i> &nbsp; 2025/02/05 - 9:00</p><p><i class="fa-solid fa-calendar"></i> &nbsp; 2025/02/10 - 17:00</p></div>
                 </div>
-            </secion>
+            </section>
         </div>
+
     </main>
-    <footer></footer>
+    <!-- footer -->
+    <footer>
+        <div class="footer_section">
+            <div class="container">
+                <div class="footer_top">
+                    <div class="footer_left">
+                        <h1>E-Sports Nexus</h1>
+                        <div class="footer_link">
+                            <div>
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Cookie Policy</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Platform</h4>
+                                <ul>
+                                    <li><a href="#">Tournaments</a></li>
+                                    <li><a href="#">Games</a></li>
+                                    <li><a href="#">Teams</a></li>
+                                    <li><a href="#">Rankings</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Press Kit</a></li>
+                                    <li><a href="#">Partners</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer_right">
+                        <p>
+                            Subscribe for monthly <strong>product updates</strong> and
+                            <strong>valuable tips</strong> for dev teams
+                        </p>
+                        <form class="subscribe_form">
+                            <input type="email" placeholder="Enter your email" />
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer_bottom">
+                    <p>All systems operational</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <p>© 2025 E-Sport Nexus. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
