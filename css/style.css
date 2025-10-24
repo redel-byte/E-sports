@@ -17,14 +17,87 @@ body {
   background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(92, 92, 92, 1) 0%, rgba(71, 71, 71, 1) 37%, rgba(69, 67, 67, 1) 42%, rgba(0, 0, 0, 1) 83%);
   background-repeat: no-repeat;
 }
-
+/* header style start */
 header {
-  position: absolute;
-  width: 100%;
-  padding: 1.7rem;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: black;
 }
+
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a,.header_contact a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a {
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  transform: scale(1.05);
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.subnav-content{
+  background: #000;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* header style end */
 
 header img{
   width: 100px;
@@ -375,6 +448,7 @@ header img{
   display: flex;
   flex-direction: column;
   transition: 500ms;
+  width: 40rem;
 }
 
 .plan__card:hover {
