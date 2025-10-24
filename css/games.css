@@ -1,0 +1,67 @@
+:root {
+    --bg-color : #161616;
+    --btn-text-color: #FFFFFF;
+    --card-h-color: #B58863;
+    --btn-glow-color: color-mix(in oklab, #B58863 50%, transparent 50%) 0 0 4px 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 39.3rem;
+    /* height: 85.2rem; */
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-color);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+#games {
+    display: flex;
+    flex-direction: column;
+}
+
+#games__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.btn {
+    padding: 0.8rem 1.2rem;
+    border-radius: 19px;
+    color: var(--btn-text-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: var(--card-h-color);
+    width: fit-content;
+}
+
+.btn--primary {
+    box-shadow: var(--btn-glow-color);
+}
+
+.btn--secondary {
+    background-color: transparent;
+    border: 1px solid var(--card-h-color);
+    color: var(--card-h-color);
+}
+
+
