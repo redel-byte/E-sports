@@ -4,16 +4,24 @@
     --gap-text-12: 1.2rem;
     --gap-inside-18: 1.8rem;
     --bg-color: #161616;
-    --card-bg-color: #3D4D55;
-    --card-h-color: #B58863;
+    --btn-primary-bg-color: #D9D9D9;
+    --btn-secondary-bg-color: #000000;
+    /* --card-bg-color: #3D4D55; */
+    --card-bg-color: rgba(255, 242, 242, 0.08);
+    --card-border-color: 0.2px solid rgba(255, 252, 252, 0.17);
+    --card-h-color: #ffffff;
     --card-p-color: #A79E9C;
-    --btn-text-color: #FFFFFF;
+    --btn-primary-text-color: #000000;
+    --btn-secondary-text-color: #FFFFFF;
     --beige-color: #D3C3B9;
-    --card-glow-color: rgba(181, 136, 99, 0.5) 0 0 5px 5px;
-    --btn-glow-color: color-mix(in oklab, #B58863 50%, transparent 50%) 0 0 4px 3px;
+    /* --card-glow-color: rgba(181, 136, 99, 0.5) 0 0 5px 5px; */
+    --card-glow-color: 0px 0px 22.8px 12px rgba(255, 252, 252, 0.07), inset 0px -3px 14.8px -2px rgba(255, 252, 252, 0.2);
+    --btn-primary-glow-color: 0px 0px 44px -12px #000000;
+    --btn-secondary-glow-color: 0px 0px 23.4px rgba(255, 255, 255, 0.32);
     --border-radius: 12px;
     --card-padding-24: 2.4rem;
-    --dark-blue-color: #10232A;
+    --mini-cards-color: rgba(255, 255, 255, 0.3);
+    --mini-cards-glow: 0px 0px 10.9px 4px rgba(255, 255, 255, 0.25), inset 0px 0px 23.4px rgba(255, 255, 255, 0.32);
 }
 
 * {
@@ -28,7 +36,7 @@ html {
 }
 
 body {
-    width: 39.3rem;
+    /* width: 39.3rem; */
     padding: 4.4rem;
     display: flex;
     flex-direction: column;
@@ -43,11 +51,20 @@ a {
     text-decoration: none;
 }
 
+.games__body__center, .teams__body__center, .blog__body__center, .competition__body__center, #events__count, #events__time, #ranking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Cards */
 .cards {
     display: flex;
     flex-direction: column;
     gap: var(--gap-cards-moblie);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -74,21 +91,21 @@ a {
 .btn {
     padding: 0.8rem 1.2rem;
     border-radius: 19px;
-    color: var(--btn-text-color);
     font-size: 1.4rem;
     font-weight: bold;
-    background-color: var(--card-h-color);
     width: fit-content;
 }
 
 .btn--primary {
-    box-shadow: var(--btn-glow-color);
+    background-color: var(--btn-primary-bg-color);
+    box-shadow: var(--btn-primary-glow-color);
+    color: var(--btn-primary-text-color);
 }
 
 .btn--secondary {
-    background-color: transparent;
-    border: 1px solid var(--card-h-color);
-    color: var(--card-h-color);
+    background-color: var(--btn-secondary-bg-color);
+    box-shadow: var(--btn-secondary-glow-color);
+    color: var(--btn-secondary-text-color);
 }
 
 /* games */
@@ -102,6 +119,8 @@ a {
     flex-direction: column;
     gap: 2.5rem;
 }
+
+
 
 #games .card__top {
     height: 22.2rem;
@@ -312,7 +331,8 @@ a {
     gap: var(--gap-small);
     height: 15rem;
     width: 15rem;
-    background-color: var(--dark-blue-color);
+    background-color: var(--mini-cards-color);
+    box-shadow: var(--mini-cards-glow);
     border-radius: 22px;
     justify-content: center;
     align-items: center;
@@ -323,8 +343,8 @@ a {
 
 #events .rows .row:not(.row--lighter) span:nth-child(2) {
     font-size: 1.3rem;
-    font-weight: normal;
-    color: var(--card-p-color);
+    font-weight: bold;
+    color: var(--btn-primary-text-color);
 }
 
 #events .rows .row--lighter span:nth-child(2) {
@@ -334,8 +354,12 @@ a {
 
 #events .rows .row--lighter span:nth-child(3) {
     font-size: 1.6rem;
-    font-weight: normal;
-    color: var(--card-p-color);
+    font-weight: bold;
+    color: var(--btn-primary-text-color);
+}
+
+#events .rows .row--lighter {
+    background-color: color-mix(in oklab, var(--mini-cards-color) 50%, transparent 50%)
 }
 
 #events #events__time {
@@ -347,7 +371,7 @@ a {
 #events .wide__card {
     display: flex;
     flex-direction: column;
-    background-color: var(--dark-blue-color);
+    background-color: var(--mini-cards-color);
     border-left: 3px solid transparent;
     border-radius: 8px;
     padding: 1.2rem;
@@ -359,9 +383,24 @@ a {
     justify-content: space-between;
 }
 
-#events .wide__card .top h2 {
+#events .wide__card .top span {
+    font-weight: bold;
+}
+
+#events .wide__card .bottom > * {
+    color: var(--btn-secondary-text-color);
+    /* font-weight: bold; */
+}
+
+#events .wide__card .bottom {
+    gap: var(--gap-text-12);
+}
+
+#events .two-rows {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-inside-18);
 }
 
 #events .wide__card:nth-child(1), #events .wide__card:nth-child(1) span {
@@ -370,8 +409,8 @@ a {
 }
 
 #events .wide__card:nth-child(2), #events .wide__card:nth-child(2) span {
-    color: #A79E9C;
-    border-color: #A79E9C;
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 #events .wide__card:nth-child(3), #events .wide__card:nth-child(3) span {
@@ -387,4 +426,37 @@ a {
 #events .wide__card:nth-child(5), #events .wide__card:nth-child(5) span {
     color: #E60000;
     border-color: #E60000;
+}
+
+@media (min-width: 700px){
+    .cards {
+        flex-direction: row !important;
+        /* flex-wrap: wrap; */
+    }
+    /* games */
+
+    /* competition */
+    #ranking .card--tall {
+        width: calc(19.8rem * 3);
+    }
+
+    /* teams */
+
+    /* blog */
+
+    /* events */
+    #events .card--tall {
+        width: calc(19.8rem * 2);
+    }
+    #events .two-rows {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: calc(var(--gap-text-12) * 10);
+    }
+
+    #events .wide__card {
+        width: calc(25.5rem * 2);
+
+    }
+
 }
