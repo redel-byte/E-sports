@@ -10,39 +10,85 @@ html {
 }
 
 /* header style start */
-
 header {
-  position: absolute;
-  width: 100%;
-  z-index: 999;
-  height: 100%;
-  padding: 2rem;
+  background: black;
 }
 
-.header__div {
+nav {
+  padding: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: white;
-  padding: 1rem;
 }
 
-.header__div a {
-  padding: 2rem;
+.navbar {
+  overflow: hidden;
 }
 
-.logo {
-  width: 10rem;
-  height: 5rem;
-
-}
-
-.nav__title {
-  font-size: 1.8rem;
-  padding: 2rem;
-  text-decoration: none;
+.navbar a,.header_contact a {
+  float: left;
+  font-size: 16px;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a {
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  transform: scale(1.05);
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.subnav-content{
+  background: #000;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /* header style end */
 
@@ -286,7 +332,8 @@ header {
   background-repeat: no-repeat;
   transition: all 0.3 ease;
 }
-.cards_section .cards .card5:hover{
+
+.cards_section .cards .card5:hover {
   transform: scale(1.05);
 }
 

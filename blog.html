@@ -11,20 +11,30 @@
 
 <body>
     <!--mobile nav-->
-    <header>
-        <div class="header__div">
-            <h1>Logo</h1>
-            <nav class="navigation">
-                <a href="./index.html" class="nav__title" aria-label="go to home page">Home</a>
-                <a href="./games.html" class="nav__title" aria-label="go to games page">Games</a>
-                <a href="./blog.html" class="nav__title" aria-label="go to blog">Blog</a>
-                <a href="plans.html" class="nav__title" aria-label="go to plan">Plan</a>
-                <a href="contact.html" class="nav__title" aria-label="go to contact page">Contact_us</a>
+     <header>
+        <div class="container">
+            <nav>
+                <div class="header_menu">
+                    <h1>E-Sports Nexus</h1>
+                </div>
+                <div class="navbar">
+                    <a href="index.html">Home</a>
+                    <div class="subnav">
+                        <button class="subnavbtn">Games <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a href="events.html">Events</a>
+                            <a href="competition.html">competition</a>
+                        </div>
+                    </div>
+                    <a href="index.html">Blog</a>
+                    <a href="index.html">Plans</a>
+                    <a href="index.html">Contact Us</a>
+                </div>
+                <div class="header_contact">
+                    <a href="signup.html">signup</a>
+                    <a href="login.html">login</a>
+                </div>
             </nav>
-            <div>
-                <a class="nav__title" href="./login.html">Login</a>
-                <a class="nav__title" href="./sign_up.html">Sign Up</a>
-            </div>
         </div>
     </header>
     <!-- main -->
